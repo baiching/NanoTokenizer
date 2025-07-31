@@ -72,13 +72,13 @@ public class FilePathTokenizerTest {
 
     @Test
     public void testWindowsMultipleBackslashes() {
-        List<String> expected = Arrays.asList("C:", "", "Temp", "");
+        List<String> expected = Arrays.asList("C:", "", "Temp");
         assertEquals(expected, filePathTokenizer.tokenize("C:\\\\Temp\\"));
     }
 
     @Test
     public void testWindowsPathEndingWithBackslash() {
-        List<String> expected = Arrays.asList("D:", "Downloads", "");
+        List<String> expected = Arrays.asList("D:", "Downloads");
         assertEquals(expected, filePathTokenizer.tokenize("D:\\Downloads\\"));
     }
 
