@@ -17,6 +17,11 @@ public class HiddenFileRule implements TokenRule {
         return false;
     }
 
+    /**
+     *
+     * @return type of token being returned
+     */
+
     @Override
     public String getTokenType() {
         return "HIDDEN";
