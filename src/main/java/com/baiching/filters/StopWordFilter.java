@@ -27,7 +27,7 @@ public class StopWordFilter {
     /**
     * creates a set of stopwords from the array
     *
-    * @param stopWords stop word array
+    * @param stopwords stop word array
     * @return a Set containing stopWords
      */
     public static Set<String> createStopWordSet(String[] stopwords) {
